@@ -12,7 +12,7 @@ const NavBar = () => {
         <NavLink to="/orgform"> Add an Organization </NavLink><br></br>
       </div>
 
-      </div>
+    //   </div>
     )
 }
 
