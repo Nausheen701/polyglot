@@ -78,6 +78,50 @@
         </p>
       </main>
 
+      <p>
+        This paragraph contains <a href="#">a hyperlink</a>! It should be green, though.
+        The trouble is that even though color is an inheritable property, 
+        it's being overwritten by the default style, color: -webkit-link?.
+        We can fix this by explicitly telling anchor tags to inherit their containing text color.
+      </p>
+
+      <p>
+        This paragraph contains <a href="#">a hyperlink</a>!
+      </p>
+      <p style="color: red;">
+        This is a red paragraph with <a href="#">another link</a>.
+      </p>
+
+      <style>
+        p {
+          font-weight: bold;
+          color: hsl(0deg 0% 10%);
+        }
+      
+        .introduction {
+          color: violet;
+        }
+      </style>
+      
+      <p class="introduction">
+        Hello world
+      </p>
+
+      <style>
+        section {
+          width: 500px;
+        }
+        .box {
+          width: 100%;
+          padding: 20px;
+          border: 4px solid;
+        }
+      </style>
+      
+      <section>
+        <div class="box"></div>
+      </section>
+      
   </body>
 </html>
 

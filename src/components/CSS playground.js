@@ -12,3 +12,4 @@
         const s = new Span();
         
         console.log(s.color);
+        
